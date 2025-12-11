@@ -1,38 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* 
+GENERAL STYLES
+*/
+
+ html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+img{
+    width: 100%;
+    height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.row{
+    padding: 32px 0;
+    max-width: 2040px;
+}
+.container{
+    margin: 0 20px;
+    max-width: 2040px;
+}
+.section__title,
+.section__sub-title{
+    line-height: 1.5;
+    text-align: center;
+}
+.section__sub-title{
+    font-size: 32px;
+    /* margin-bottom: 16px; */
+    text-align: center;
+}
+.section__title{
+    font-size: 57px;
+    padding-top: 32px;
+    margin-top: 3px
+}
+.color-text{
+    color: #FCEB2C;
+}
+button{
+background-color: #32429A;
+color: white;
+font-size: 16px;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+border: none;
+}
+.click {
+  transition: all 300ms ease;
+}
+.click:hover {
+  transform: scale(1.1);
+  background-color: #fff;
+  color: #FCEB2C;
+  border: 2px solid #FCEB2C;
+}
+.click:active {
+  transform: scale(0.8);
+}
+a{
+    color: inherit;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+input{
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #242424;
+    color: #0a1f44;
+    height: 60px;
+    line-height: 40px;
+    outline: none;
+    padding: 0 25px;
+    font-size: 24px;
+    width: 100%;
+    max-width: 600px;
+}
+.link__hover {
+  position: relative;
+}
+.link__hover--white::after {
+  background-color: #fff;
+}
+.link__hover--red::after{
+    background-color: darkred;
+}
+.link__hover::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  height: 3px;
+  width: 0;
+  right: 0;
+  color: #FCEB2C;
+  transition: all 300ms ease-in-out;
+}
+.link__hover:hover::after {
+  left: 0;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* 
+HOME STYLES
+*/
+.banner__img {
+  max-height: 350px;
+}
+.featured__wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 32px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
