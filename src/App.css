@@ -124,3 +124,6 @@ HOME STYLES
   gap: 32px;
   justify-content: center;
 }
+.grey-text {
+  color: grey;
+} 

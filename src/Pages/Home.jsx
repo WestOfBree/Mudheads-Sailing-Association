@@ -1,5 +1,8 @@
 import React from "react";
 import Featured from "../components/Featured";
+import { Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Post from "./Post";
 
 function Home() {
   return (
@@ -14,9 +17,9 @@ function Home() {
       <p>This is the home page of our application.</p>
         <h2>Featured Items</h2>
         <div className="featured__wrapper">
-        <Featured />
-        <Featured />
-        <Featured />
+          <Featured Link={Link} />
+          <Featured Link={Link} />
+          <Featured Link={Link} />
         </div>
     </div>
   );

@@ -5,15 +5,14 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Footer from './components/Footer';
 import Nav from './components/Nav';
 import Home from './Pages/Home';
-// import Home from './components/Home';
-// import About from './components/About';
-// import Contact from './components/Contact';
+import Post from './Pages/Post';
 function App() {
   return (
     <div className="App">
     <div className="container">
       <Nav />
       <Home />
+      <Post />
       </div>
          <Footer />
     </div>
