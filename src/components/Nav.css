@@ -46,11 +46,37 @@ nav{
 }
 .nav__link:hover {
   text-decoration: underline;
-  transform: translateX(10px); 
+  /* transform: translateX(10px);  */
 }
 .primary-boop{
     font-family: "Limelight", sans-serif;
     font-size: 20px;
     padding: 8px 16px;
     border-radius: 20px;
+}
+.dropdown__menu{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #f7fafc;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    visibility: hidden;
+    flex-direction: column;
+    z-index: 10;
+    transition: all 300ms ease;
+}
+.nav__link:hover .dropdown__menu,
+.dropdown__menu:hover,
+.dropdown__link:hover{
+    visibility: visible;
+}
+.dropdown__link{
+    font-size: 16px;
+    padding: 8px 16px;
+    color: #0a1f44;
+    background: #f7fafc;
+    display: block;
+    white-space: nowrap;
 }

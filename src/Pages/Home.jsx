@@ -3,6 +3,7 @@ import Featured from "../components/Featured";
 import { Link } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import Post from "./Post";
+import Landing from "../components/Landing.jsx";
 
 function Home() {
   return (
@@ -13,14 +14,14 @@ function Home() {
           alt=""
         />
       </div>
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the home page of our application.</p>
+      <Landing />
         <h2>Featured Items</h2>
         <div className="featured__wrapper">
-          <Featured Link={Link} />
-          <Featured Link={Link} />
-          <Featured Link={Link} />
+          <Link to={'/Post'} ><Featured  /></Link>
+          <Link to ={''}><Featured  /></Link>
+          <Link to ={''}><Featured  /></Link>
         </div>
+        {/* paypal component will go here */}
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import "./Featured.css";
 
 
-function Featured({ Link }) {
+function Featured({  }) {
   return (
     <div className="featured__container">
       <figure className="featured__figure">
@@ -12,12 +12,7 @@ function Featured({ Link }) {
           alt=""
         />
       </figure>
-
-      {Link ? (
-        <Link to="/posts" className="button__primary">
-          Learn More
-        </Link>
-      ) : null}
+     <button className="featured__button click">Read More</button>
     </div>
   );
 }

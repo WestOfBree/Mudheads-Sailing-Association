@@ -16,7 +16,7 @@ function Nav() {
   return (
     <nav id="nav">
       <div className="row">
-        <div className="column">
+        <div>
           <div className="nav__container">
             <div className="nav__left">
               <Link to="/" className="notflix__logo">
@@ -29,14 +29,22 @@ function Nav() {
                 <li>
                  <Link className="nav__link link__hover" to="/">Home</Link>
                 </li>
-                <li>
-                  <Link className="nav__link link__hover" to="/Results">Racing</Link>
+                <li className="nav__link link__hover">
+                  Racing
+                  <ul className="dropdown__menu">
+                  <li><Link className="dropdown__link" target="_blank" to="https://theclubspot.com/regatta/HcDbD5AgiF">Donzo WNRS</Link></li>
+                  <li><Link className="dropdown__link" target="_blank" to="https://www.yachtscoring.com/emenu/17020">Mudhead Benefit Cup</Link></li>
+                  <li><Link className="dropdown__link" target="_blank" to="https://theclubspot.com/regatta/tHvgn1SAyl">Mudnite Madness</Link></li>
+                  <li><Link className="dropdown__link" target="_blank" to="https://theclubspot.com/regatta/DWauqomWTL">Mudhead Fall Regetta</Link></li>
+                  <li><Link className="dropdown__link" to="/PastRaces">Past Races</Link></li>
+
+                  </ul>
                 </li>
                                 <li>
-                  <Link className="nav__link link__hover" to="/Results">Events</Link>
+                  <Link className="nav__link link__hover" to="/Events">Events</Link>
                 </li>
                                 <li>
-                  <Link className="nav__link link__hover" to="/Results">Mudwho?</Link>
+                  <Link className="nav__link link__hover" to="/About">Mudwho?</Link>
                 </li>
                 <li>
                   {/* <button className="primary-boop click" onClick={() => toggleModule()}> Contact</button> */}

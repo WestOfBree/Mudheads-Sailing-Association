@@ -43,10 +43,12 @@ footer {
 .footer__column--link:nth-child(2) {
   margin-top: 24px;
 }
-.footer__divider {
-  width: 100%;
+.divider{
+   width: 100%;
   height: 2px;
   margin: 44px 0;
+}
+.footer__divider {
   background: #32429A;
 }
 .footer__bottom{

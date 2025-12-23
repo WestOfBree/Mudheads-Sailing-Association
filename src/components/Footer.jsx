@@ -44,7 +44,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
                     <a href="" className="footer__column--link no-cursor">Disclaimer</a>
                 </div>
             </div>
-            <div className="footer__divider"></div>
+            <div className="divider footer__divider"></div>
             <div className="footer__bottom">
                
                 <div className="footer__socials">
