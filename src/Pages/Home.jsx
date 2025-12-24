@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import Post from "./Post";
 import Landing from "../components/Landing.jsx";
-
+import Paypal from "../components/Paypal.jsx";
 function Home() {
   return (
     <div>
@@ -21,7 +21,8 @@ function Home() {
           <Link to ={''}><Featured  /></Link>
           <Link to ={''}><Featured  /></Link>
         </div>
-        {/* paypal component will go here */}
+        <Paypal />
+       {/* insert weather component and tide tracker here */}
     </div>
   );
 }
