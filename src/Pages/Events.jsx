@@ -2,15 +2,17 @@ import React from "react";
 import Featured from "../components/Featured";
 import eventDates from "../assets/eventDates.jpg";
 
-function Events() {
+function Events({ link: Link }) {
   return (
-    <div className="row">
-      <div className="column">
+    <div className="row events__row">
+      <div className="column events__column">
         <h2>Upcoming Events</h2>
-        <Featured />
-        <figure className="featured__figure">
-          <img className="click" src={eventDates} alt="Event Dates" />
+        <div className="events__wrapper">
+        <Link to= "/Post"><Featured /></Link>
+        <figure className="event-dates__wrapper">
+          <img className="event-dates__image" src={eventDates} alt="Event Dates" />
         </figure>
+        </div>
       </div>
     </div>
   );
