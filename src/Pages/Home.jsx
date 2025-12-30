@@ -5,6 +5,8 @@ import { Routes, Route } from "react-router-dom";
 import Post from "./Post";
 import Landing from "../components/Landing.jsx";
 import Paypal from "../components/Paypal.jsx";
+import mudDues from "../assets/mudheaddues-2026.jpg";
+import holidayParty from "../assets/holidayParty.jpg";
 function Home() {
   return (
     <div>
@@ -17,9 +19,9 @@ function Home() {
       <Landing />
         <h2>Featured Items</h2>
         <div className="featured__wrapper">
-          <Link to={'/Post'} ><Featured  /></Link>
-          <Link to ={''}><Featured  /></Link>
-          <Link to ={''}><Featured  /></Link>
+          <Link to={'/Post'} ><Featured image={holidayParty} /></Link>
+          <Link to ={''}><Featured image={mudDues} /></Link>
+          {/* <Link to ={''}><Featured /></Link> */}
         </div>
         <Paypal />
        {/* insert weather component and tide tracker here */}

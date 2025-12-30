@@ -76,6 +76,9 @@ p{
 .color-text{
     color: #FCEB2C;
 }
+.red-text{
+    color: red;
+}
 button{
 background-color: #32429A;
 color: white;

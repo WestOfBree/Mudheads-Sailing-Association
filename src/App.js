@@ -9,6 +9,7 @@ import Post from './Pages/Post';
 import About from './Pages/About';
 import Events from './Pages/Events';
 import PastRaces from './Pages/PastRaces';
+import Membership from './Pages/Membership';
 import { Routes } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Routes><Route path="/About" element={<About />} /></Routes>
       <Routes><Route path="/Events" element={<Events link={Link} />} /></Routes>
       <Routes><Route path="/PastRaces" element={<PastRaces />} /></Routes>
+      <Routes><Route path="/Membership" element={<Membership />} /></Routes>
 
       </div>
          <Footer />

@@ -3,8 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   padding: 20px;
+  height: 100%;
+  max-width: 400px;
 }
 button {
   background-color: #32429a;
@@ -16,4 +17,7 @@ button {
 .featured__figure {
 margin-bottom: 20px;
 overflow: hidden;
+}
+.featured--wrapper{
+  width: calc(100% / 3);
 }
