@@ -20,7 +20,7 @@ function Home() {
         <h2>Featured Items</h2>
         <div className="featured__wrapper">
           <Link to={'/Post'} ><Featured image={holidayParty} /></Link>
-          <Link to ={''}><Featured image={mudDues} /></Link>
+          <Link to ={'/Membership'}><Featured image={mudDues} /></Link>
           {/* <Link to ={''}><Featured /></Link> */}
         </div>
         <Paypal />
